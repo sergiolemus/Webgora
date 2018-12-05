@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    
+    <head>
+        
+        <meta charset = "utf-8" />
+        <title> MONGO </title>
+        
+    </head>
+    
+    <body>
+        
+        <h1>Syntax use Communication System</h1>
+        
+        <li>Open the Console First</li>
+        <li>Login: API.login(“Username”)</li>
+        <li>Message: API.sendMessage(“to”,“message”)</li>
+        <li>Attachments: API.sendAttachment("to")</li>
+        <li>Video Call: API.requestVideoCall(["to"])</li>
+        
+        <script src = "AgoraSig-1.3.3.js"></script>
+        <script src = "AgoraRTCSDK-2.4.0.js"></script>
+        <script src = "commHandler.js"></script>
+        <script src = "md5.min.js"></script>
+        <script src = "signalToken.js"></script>
+        <script src = "base64Attach.js"></script>
+        
+        <script>
+          
+            var API = new commHandler( );
+        
+        </script>
+        
+        <br/>
+        <input type='file' id='attachment'></input>
+        <div>
+        <button type="button" id="downButton">Download File</button>
+        </div>
+        <br/>
+        
+        <div>
+            <div id="Local_Display" style="float:right; display:inline-block; width:160px; height:120px;"></div>
+        </div>
+        
+    </body>
+
+</html>
